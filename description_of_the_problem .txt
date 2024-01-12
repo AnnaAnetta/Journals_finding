@@ -1,0 +1,14 @@
+The task is to create a mechanism for searching scientific journals (a list of journals prepared by the Polish Ministry of Science) according to two criteria. The first is the scientific discipline assigned to the journal. The second is the number of points a specific journal holds.
+For the purpose of this task, the original file was reduced to 99 rows.
+
+The first action is to import a file in .xlsx format. For this, the library pandas import is used first.
+Then a function is created: find_journals.
+What is needed first is a user action, i.e. input - entering the name of the scientific discipline to be searched (in Polish - from the .xlsx file).
+If the discipline doesn't exist - there is a command to enter the discipline correctly. The command works as a loop - until the name of the discipline is entered correctly.
+The second input needed from the user is to enter the number of points sought, e.g. 70.
+ The result will be a list: the number of journals that meet two conditions - discipline and number of points >= the desired number of points.
+
+The next action is to create a graph showing statistics: how many journals in the list belong to a certain category of points.
+Import library matplotlib is used to draw the graph.
+
+The test consists in checking whether the program correctly searches for journals according to the entered discipline. It was manually calculated that there were 6 journals in the list and the program indicated the number 6.
